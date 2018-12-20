@@ -1,240 +1,283 @@
 <!Doctype html>
 <html>
   <head>
-	   <title>Homepage</title>
-		 <style>
-		  body{
-				background-color: #BB5843;
-			}
-			h1{
-				border-collapse: collapse;
-        height: 85px;
-				width: 102%;
-				font-family:Georgia;
-				font-size:70px;
-				font-weight:bold;
-				color: #000000;
-				text-shadow:
-				-1px -1px 0 #555,
-				1px -1px 0 #555,
-				-1px 1px 0 #555,
-				1px 1px 0 #555;
-        text-align: center;
-				padding: 0 0 0 -10px;
-        margin: -10px 0 0 -10px;
-				background-color:#BB5843;
-			}
-      h3{
-        border-collapse: collapse;
-        font-family:Georgia;
-        font-size:15px;
-        font-weight:bold;
-        color: #000000;
-        height: 20px;
-        margin-bottom: 0;
-        margin-top: 0;
-        width: 102%;
-        padding: 0;
-        padding-left: -10px;
-        margin-left: -10px;
-        background-color:#BB5843;
-        text-align: center;
-      }
-			h2 {
-				font-size: 35px;
-				padding: 10px 0 0 0;
-        margin: 0;
-				color: #000000;
-				text-shadow:
-				-1px -1px 0 #444,
-				1px -1px 0 #444,
-				-1px 1px 0 #444,
-				1px 1px 0 #444;
-			}
-			hr{
-				border: 10px solid #000000;
-				size: 2000px;
-			}
-			hr.side{
-				margin: 0;
-				padding: 0;
-        padding-left: -10px;
-        margin-left: -10px;
-				size: 2000px;
-				border: 0;
-				border-top: 1px solid #93260F;
-				width: 102%;
-			}
-			input {
-				font-size: 18px;6B1806
-			}
-			* {box-sizing: border-box;}
-		.topnav {
-			float:left;
-			width: 102%;
-			margin: 0;
-      padding-left: -10px;
-      margin-left: -10px;
-			overflow: hidden;
-			background-color: #9F1D01;
-			border: 1px solid black;
-      text-shadow:
-      -1px -1px 0 #777,
-      1px -1px 0 #777,
-      -1px 1px 0 #777,
-      1px 1px 0 #777;
-		}
-		.topnav a {
-			float: left;
-			display: block;
-			color: black;
-			text-align: center;
-			padding: 10px 32px;
-			text-decoration: none;
-			font-size: 24px;
-		}
-		.topnav input[type=text] {
-			margin-left: 195px;
-			font-size: 17px;
-			border: none;
-			width: 200px;
-		}
-		.topnav input[type=submit] {
-			height: 33px;
-			width: 75px;
-			padding:0;
-		}
-		.topnav a:hover {
-			background-color: #A47272;
-			color: black;
-		}
-		.topnav a.active {
-			background-color: #2196F3;
-			color: white;
-		}
-		.topnav .login-container {
-			float: right;
-		}
-		.topnav input[type=text] {
-			padding: 6px;
-			margin-top: 8px;
-			font-size: 17px;
-			border: none;
-			width: 200px;
-		}
-		.topnav input[type=password] {
-			padding: 6px;
-			margin-top: 8px;
-			font-size: 17px;
-			border: none;
-			width: 200px;
-		}
-		.topnav .login-container button {
-			float: right;
-			padding: 6px;
-			margin-top: 8px;
-			margin-right: 16px;
-			background: #ddd;
-			font-size: 17px;
-			border: none;
-			cursor: pointer;
-		}
-		.topnav .login-container button:hover {
-			background: #ccc;
-		}
-		@media screen and (max-width: 600px) {
-			.topnav .login-container {
-				float: none;
-			}
-			.topnav a, .topnav input[type=text], .topnav .login-container button {
-				float: none;
-				display: block;
-				text-align: left;
-				width: 100%;
-				margin: 0;
-				padding: 14px;
-			}
-			.topnav input[type=text] {
-				border: 1px solid #ccc;
-			}
-		}
-		</style>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>CGlenn Resume</title>
+  </head>
+  <body>
 
-	</head>
-	<body>
-    <div>
-		    <h1>Clayton "Chase" Glenn</h1>
-        <h3>(580) 362-7999 • 5400 East River Road, Newkirk, OK, 74647 • 1111 Oaktree, Apt 334 , Norman 73072 • Glen5641@ou.edu</h3>
+    <div id="id01" class="modal">
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
     </div>
 
-		<hr class="side">
+    <h1>Clayton "Chase" Glenn</h1>
+    <h3>(580) 362-7999 • 5400 East River Road, Newkirk, OK, 74647 • 1111 Oaktree, Apt 334 , Norman 73072 • Glen5641@ou.edu</h3>
+    <hr class="side">
 
-		<div class="topnav">
-			<a href="#Objectives" 									target="_blank" class="button1">Objectives		</a>
-			<a href="#Education" 								target="_blank" class="button1">Education	</a>
-			<a href="#Research and Experience" 								target="_blank" class="button1">Research and Experience		</a>
-			<a href="#Skills" 									target="_blank" class="button1">Skills			</a>
-			<a href="https://outlook.office.com/owa/" 						target="_blank" class="button1">Outlook		</a>
-		</div>
+    <div class="topnav">
+      <a href="#Objectives"                class="button1">Objectives                </a>
+      <a href="#Education"                 class="button1">Education	                </a>
+      <a href="#Research and Experience" 	 class="button1">Research and Experience		</a>
+      <a href="#Skills" 									 class="button1">Skills			              </a>
+      <a onclick="document.getElementById('id01').style.display='block'" class="disabled">Login  </a>
+    </div>
+
+    <hr class="side">
+    </br>
+
+    <a id="Objectives"><h2>Objectives</h2></a>
+    Diligent Computer Science student with business and mathematical background, leadership, organizational skills, and
+    a wide array of trait experience. I am seeking to apply my abilities and education to learn and adapt to an industry
+    environment to further pursue my Computer Science career, and to possibly develop and/or maintain new skills for
+    efficiency and optimization.</br></br>
+
+    <a id="Education"><h2>Education</h2></a>
+    <ul>
+      <li><b>University of Oklahoma Present Norman, OK</b></li>
+      <ul>
+        <li>B.Sc. Computer Science of Engineering College/ Mathematics Minor</li>
+        <li>Athletics & Activities
+          <ul>
+            <li>Dean’s Honor Roll</li>
+            <li>Cheerleading</li>
+            <li>Sooner Off-Road Racing</li>
+          </ul>
+        <li>Strong Emphasis on
+        <ul>
+          <li>Object Oriented Design</li>
+          <li>Adobe Cloud</li>
+          <li>Mathematical Sciences</li>
+          <li>Algorithms and Structures</li>
+          <li>Analysis and Complexity of Algorithms</li>
+          <li>Computer Organization and Operating Systems</li>
+          <li>Early and Late Stage</li>
+          <li>backend Software Development</li>
+          <li>Computational Ethics</li>
+          <li>Linux Development</li>
+        </ul>
+      </ul>
+      <li><b>Northern Oklahoma College May 2016 Tonkawa, OK</b></li>
+      <ul>
+        <li>AB in Business College Computer Science / Management and Information Systems</li>
+        <li>Honors & Activities</li>
+        <ul>
+          <li>Dean’s Honor Roll</li>
+          <li>Computer and Math Class Tutor</li>
+          <li>Resident Advisor</li>
+        </ul>
+        <li>Clubs & Athletics</li>
+        <ul>
+          <li>Rho Delta Rho President</li>
+          <li>Cheerleading.</li>
+        </ul>
+        <li>Emphasis on</li>
+        <ul>
+          <li>Business Macro/Micro Economics</li>
+          <li>Office (Word, Excel, Power Point, Access)</li>
+          <li>Financial and Managerial Accounting</li>
+          <li>Iterative Programming</li>
+          <li>Business Ethics</li>
+        </ul>
+      </ul>
+    </ul>
+
+    <a id="Research and Experience"><h2>Research and Experience</h2></a>
+    <table style="width:100%">
+      <tr>
+        <td class="emp">On-Site-Rep / Field Technician</br>
+            Single Digits, Inc.</br>
+            July 2017 - Present</br>
+        </td>
+        <td>
+          Creating rapport through customer relations
+          on many apartment complexes, interacting
+          with engineers and other technicians to
+          troubleshoot, configure, and maintain
+          hardware through Linux, and establishing
+          network knowledge through frequencies of
+          wireless fidelity, fiber, ethernet
+          connections, and surveillance.</br>
+        </td>
+      </tr>
+      <tr>
+        <td class="emp">
+          Consultation and Development</br>
+          Commons on Oak Tree</br>
+          October 2017 - Present</br>
+        </td>
+        <td>
+          Aiding the apartment complex with on-site
+          technical assistance and developing multiple
+          programs such as Electric Overage Calculators
+          and (Presently In Development) a complex
+          multi-use resident matching, overage, and
+          searching program using multiple languages
+          to inherit the perks of the strengths of the
+          languages.</br>
+        </td>
+      </tr>
+    </table>
 
 
-		<hr class="side">
 
 
-<a id="Objectives"><h2>Objectives</h2></a>
-Diligent Computer Science student with business and mathematical background, leadership, organizational skills, and</br>
-a wide array of trait experience. I am seeking to apply my abilities and education to learn and adapt to an industry</br>
-environment to further pursue my Computer Science career, and to possibly develop and/or maintain new skills for</br>
-efficiency and optimization.
-
-<a id="Education"><h2>Education</h2></a>
-University of Oklahoma Present Norman, OK</br>
-B.Sc. Computer Science of Engineering College/ Mathematics Minor</br>
-• Athletics & Activities – Dean’s Honor Roll, Cheerleading, Sooner Off-Road Racing</br>
-• Strong Emphasis on: Object Oriented Design, and Adobe Cloud; Mathematical Sciences and Algorithms; Analysis of</br>
-Algorithms/Complexity of Algorithms; Computer Organization and Operating Systems; Early and Late Stage</br>
-backend Software Development; Computational Ethics; Linux Development</br>
-Northern Oklahoma College May 2016 Tonkawa, OK</br>
-AB in Business College Computer Science / Management and Information Systems</br>
-Honors & Activities – Dean’s Honor Roll, Computer and Math Class Tutor, Resident Advisor</br>
-Clubs & Athletics - Rho Delta Rho President, Cheerleading.</br>
-Emphasis on Business Macro/Micro Economics, Office (Word, Excel, Power Point, Access), Financial and</br>
-Managerial Accounting, Iterative Programming, Business Ethics
-
-<a id="Research and Experience"><h2>Research and Experience</h2></a>
-On-Site-Representative/Field Technician</br>
-Single Digits, Inc.</br>
-July 2017 - Present</br>
-Creating rapport through customer relations on many apartment complexes, interacting with engineers and other</br>
-technicians to troubleshoot, configure, and maintain hardware through Linux, and establishing network knowledge</br>
-through frequencies of wireless fidelity, fiber, ethernet connections, and surveillance.</br>
-Consultation and Development</br>
-Commons on Oak Tree</br>
-October 2017 - Present</br>
-Aiding the apartment complex with on-site technical assistance and developing multiple programs such as Electric</br>
-Overage Calculators and (Presently In Development) a complex multi-use resident matching, overage, and searching</br>
-program using multiple languages to inherit the perks of the strengths of the languages.
-
-<a id="Skills"><h2>Skills</h2></a>
-General Skills</br>
-Leadership, Communication, Time Management, Adaptability, Work Well under Pressure, Expert Troubleshooting</br>
-Software Development</br>
-Experienced with Backend development and Basic Skills with front end. Experience with Eclipse, Visual Studio, Adobe</br>
-Creative Cloud, Azure, Atom, Notepad++, and Linux Terminal. Languages include: Java; C++; C; R; Visual Basic; SQL;</br>
-HTML; JavaScript; CSS; C#; Python</br>
-Collaboration Techniques</br>
-Github and Github Markdown, R Markdown, LATEX, Word, Excel, PowerPoint, OneDrive, Atom Teletype</br>
-Data Structures</br>
-Dynamic Arrays, Hash and Heap Structures, Indexed Structures, Graphs, Lists, and Trees</br>
-Algorithms</br>
-Various Sorting and Searching Algorithms, Random Number Algorithms, and Matrix Algorithms</br>
-Business</br>
-Evaluating Supply and Demand and Estimating Equilibrium/Finances</br>
-Analysis</br>
-Time/Space Complexity of Algorithms, Linear Models, and Statistical Methods</br>
-Mathematics</br>
-Fundamental Calculus on Multiple Dimensions, Differential Equations, Linear Algebra, Trigonometric Properties of</br>
-Mathematics, Discrete Mathematics, Theory of Computation, Deep Understanding of Mathematical Theory and</br>
-Statistics
-</body>
+    </br></br>
+    <a id="Skills"><h2>Skills</h2></a>
+    <ol>
+      <li><b>General Skills</b></li>
+      <ul>
+        <li>Leadership</li>
+        <li>Communication</li>
+        <li>Time Management</li>
+        <li>Adaptability</li>
+        <li>Work Well under Pressure</li>
+        <li>Expert Troubleshooting</li>
+        <li>Word</li>
+        <li>Excel</li>
+        <li>Powerpoint</li>
+        <li>Access</li>
+      </ul>
+      <li><b>Software Development</b></li>
+      <ul>
+        <li>Well Versed with Backend Development</li>
+        <li>General Experience with Frontend Development</li>
+      </ul>
+      <li><b>Most Used IDE's and Text Editors</b></li>
+      <ul>
+        <li>Adobe Creative Cloud</li>
+        <li>Atom</li>
+        <li>Azure</li>
+        <li>Eclipse</li>
+        <li>Komodo</li>
+        <li>Visual Studio</li>
+        <li>Notepad++</li>
+        <li>R Studio</li>
+        <li>Native GNU Editors (in this order)</li>
+        <ul>
+          <li>Nano</li>
+          <li>Vim</li>
+          <li>Emacs</li>
+        </ul>
+      </ul>
+      <li><b>Languages</b></li>
+      <ul>
+        <li>C</li>
+        <li>C++</li>
+        <li>C#</li>
+        <li>HTML w/ CSS & JavaScript</li>
+        <li>Java</li>
+        <li>Linux GNU Bash</li>
+        <li>Python</li>
+        <li>R</li>
+        <li>Ruby</li>
+        <li>SQL</li>
+        <li>Visual Basic</li>
+      </ul>
+      <li><b>Collaboration Techniques</b></li>
+      <ul>
+        <li>Github</li>
+        <li>Github Markdown</li>
+        <li>Github Pages</li>
+        <li>R Markdown</li>
+        <li>LATEX</li>
+        <li>Google Cloud Platform</li>
+        <li>Microsoft 365</li>
+        <li>Teletype</li>
+      </ul>
+      <li><b>Data Structures</b></li>
+      <ul>
+        <li>Dynamic Arrays</li>
+        <li>Hash Tables</li>
+        <li>Indexed Sequential Structures</li>
+        <li>Lists</li>
+        <ul>
+          <li>Queues</li>
+          <li>Stacks</li>
+          <li>Linked(Circular and Straight)</li>
+        </ul>
+        <li>Heaps</li>
+        <li>Trees</li>
+        <ul>
+          <li>AVL</li>
+          <li>Red/Black</li>
+          <li>Binary</li>
+          <li>B</li>
+          <li>B+</li>
+          <li>Traversal</li>
+          <li>Zig and Zag</li>
+        </ul>
+        <li>Graphs</li>
+        <ul>
+          <li>Directed</li>
+          <li>Undirected</li>
+          <li>Shortest Path</li>
+        </ul>
+      </ul>
+      <li><b>Sorting Algortihms</b></li>
+      <ul>
+        <li>Insertion</li>
+        <li>Selection</li>
+        <li>Merge</li>
+        <li>Heap</li>
+        <li>Quick</li>
+        <li>Bubble</li>
+        <li>Radix</li>
+        <li>Binary</li>
+      </ul>
+      <li><b>Random Number Algorithms</b></li>
+      <ul>
+        <li>Random Nubmer Tables</li>
+        <li>Monte Carlo Method</li>
+        <li>Las Vegas Method</li>
+      </ul>
+      <li><b>Matrix Algorithms</b></li>
+      <li><b>Business</b></li>
+      <ul>
+        <li>Evaluating Supply and Demand</li>
+        <li>Equilibrium</li>
+        <li>Balance Sheets</li>
+        <li>Income Statements</li>
+        <li>Cash Flow</li>
+      </ul>
+      <li><b>Analysis</b></li>
+      <ul>
+        <li>Time Complexity of Algorithms</li>
+        <li>Space Complexity of Algorithms</li>
+        <li>Linear Models</li>
+        <li>Statistical Methods</li>
+        <ul>
+          <li>Bootstrapping</li>
+          <li>T Distributions</li>
+        </ul>
+      </ul>
+      <li><b>Mathematics</b></li>
+      <ul>
+        <li>Fundemental Calculus on Multiple Dimensions</li>
+        <li>Differential Equations</li>
+        <li>Linear Algebra</li>
+        <li>Discrete Mathematics</li>
+        <li>Computation Theory</li>
+      </ul>
+    </ol>
+  </body>
 </html>
