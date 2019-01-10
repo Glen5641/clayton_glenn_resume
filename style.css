@@ -2,7 +2,9 @@ body {
   background-color: #EDEDED;
   font-size: 24px;
   font-family: Arial, Helvetica, sans-serif;
-} h1 {
+}
+
+h1 {
   border-collapse: collapse;
   height: 5vw;
   width: 101%;
@@ -19,7 +21,9 @@ body {
   padding: 0 0 0 -10px;
   margin: -10px 0 0 -10px;
   background-color:#DFDFDF;
-} h2 {
+}
+
+h2 {
   font-size: 35px;
   padding: 10px 0 0 0;
   margin: 0;
@@ -29,7 +33,9 @@ body {
     1px -1px 0 #444,
     -1px 1px 0 #444,
     1px 1px 0 #444;
-} h3 {
+}
+
+h3 {
   border-collapse: collapse;
   font-family:Georgia;
   font-size:1vw;
@@ -44,13 +50,9 @@ body {
   margin-left: -10px;
   background-color:#DFDFDF;
   text-align: center;
-} .para {
-  text-align: justify;
-} .para:after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-} hr.side {
+}
+
+hr.titleRule {
   margin: 0;
   padding: 0;
   padding-left: -10px;
@@ -59,9 +61,11 @@ body {
   border: 0;
   border-top: 1px solid #93260F;
   width: 101%;
-} .topnav {
+}
+
+.topnav {
   float:left;
-  width: 101%;
+  width: 100.9%;
   margin: 0;
   padding-left: -10px;
   margin-left: -10px;
@@ -73,7 +77,9 @@ body {
     1px -1px 0 #777,
     -1px 1px 0 #777,
     1px 1px 0 #777;
-} .topnav a {
+}
+
+.topnav a {
   float: left;
   display: block;
   color: black;
@@ -81,63 +87,19 @@ body {
   padding: 10px 6vw;
   text-decoration: none;
   font-size: 1.46vw;
-} .topnav a:hover {
+}
+
+.topnav a:hover {
   background-color: #A1A1A1;
   color: black;
-} .topnav a.active {
+}
+
+.topnav a.active {
   background-color: #A1A1A1;
   color: white;
-} .topnav .login-container {
-  float: right;
-} .topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  width: 200px;
-} .topnav input[type=password] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-  width: 200px;
-} .topnav .login-container button {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-} .topnav .login-container button:hover {
-  background: #ccc;
-} @media screen and (max-width: 600px) {
-  span.psw {
-     display: block;
-     float: none;
-  } .cancelbtn {
-     width: 100%;
-  } .topnav .login-container {
-    float: none;
-  } .topnav a, .topnav input[type=text], .topnav .login-container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  } .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-} input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-} button {
+}
+
+button {
   background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
@@ -145,80 +107,55 @@ body {
   border: none;
   cursor: pointer;
   width: 100%;
-} button:hover {
+}
+
+.button1 {
+  width: 11.49%;
+}
+
+.button2 {
+  width: 17%;
+}
+
+button:hover {
   opacity: 0.8;
-} a.disabled {
+}
+
+a.disabled {
   pointer-events: none;
   cursor: default;
-}.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-} .imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-} img.avatar {
-  width: 40%;
-  border-radius: 50%;
-} .container {
-  padding: 16px;
-} span.psw {
-  float: right;
-  padding-top: 16px;
-} .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-  padding-top: 60px;
-} .modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto;
-  border: 1px solid #888;
-  width: 80%;
-} .close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-} .close:hover, .close:focus {
-  color: red;
-  cursor: pointer;
-} .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-} @-webkit-keyframes animatezoom {
-  from {
-    -webkit-transform: scale(0)
-  } to {
-    -webkit-transform: scale(1)
-  }
-} @keyframes animatezoom {
-  from {
-    transform: scale(0)
-  } to {
-    transform: scale(1)
-  }
-} table, th, td {
+}
+
+table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
-} th, td {
+}
+
+th, td {
   width: 75%;
   padding: 10px;
   text-align: left;
-} .emp {
+}
+
+.emp {
   width: 25%;
-} table tr:nth-child(even) {
+}
+
+table tr:nth-child(even) {
   background-color: #ccc;
-} table tr:nth-child(odd) {
+}
+
+table tr:nth-child(odd) {
   background-color: #fff;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

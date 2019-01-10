@@ -7,42 +7,19 @@
   </head>
   <body>
 
-    <div id="id01" class="modal">
-      <form class="modal-content animate" action="/action_page.php">
-        <div class="imgcontainer">
-          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-          <img src="img_avatar2.png" alt="Avatar" class="avatar">
-        </div>
-        <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Enter Username" name="uname" required>
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-          <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-          </label>
-        </div>
-        <div class="container" style="background-color:#f1f1f1">
-          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
-        </div>
-      </form>
-    </div>
-
+    <!-- Title -->
     <h1>Clayton "Chase" Glenn</h1>
     <h3>(580) 362-7999 • 5400 East River Road, Newkirk, OK, 74647 • 1111 Oaktree, Apt 334 , Norman 73072 • Glen5641@ou.edu</h3>
-    <hr class="side">
+    <hr class="titleRule">
 
     <div class="topnav">
       <a href="#Objectives"                class="button1">Objectives                </a>
       <a href="#Education"                 class="button1">Education	                </a>
-      <a href="#Research and Experience" 	 class="button1">Research and Experience		</a>
+      <a href="#Research and Experience" 	 class="button2">Research and Experience		</a>
       <a href="#Skills" 									 class="button1">Skills			              </a>
-      <a onclick="document.getElementById('id01').style.display='block'" class="disabled">Login  </a>
     </div>
 
-    <hr class="side">
+    <hr class="titleRule">
     </br>
 
     <a id="Objectives"><h2>Objectives</h2></a>
@@ -143,141 +120,157 @@
 
     </br></br>
     <a id="Skills"><h2>Skills</h2></a>
-    <ol>
-      <li><b>General Skills</b></li>
-      <ul>
-        <li>Leadership</li>
-        <li>Communication</li>
-        <li>Time Management</li>
-        <li>Adaptability</li>
-        <li>Work Well under Pressure</li>
-        <li>Expert Troubleshooting</li>
-        <li>Word</li>
-        <li>Excel</li>
-        <li>Powerpoint</li>
-        <li>Access</li>
-      </ul>
-      <li><b>Software Development</b></li>
-      <ul>
-        <li>Well Versed with Backend Development</li>
-        <li>General Experience with Frontend Development</li>
-      </ul>
-      <li><b>Most Used IDE's and Text Editors</b></li>
-      <ul>
-        <li>Adobe Creative Cloud</li>
-        <li>Atom</li>
-        <li>Azure</li>
-        <li>Eclipse</li>
-        <li>Komodo</li>
-        <li>Visual Studio</li>
-        <li>Notepad++</li>
-        <li>R Studio</li>
-        <li>Native GNU Editors (in this order)</li>
+    <div class="row">
+      <div class="column">
+        <ol>
+          <li><b>General Skills</b></li></br>
+          <ul>
+            <li>Leadership</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+            <li>Adaptability</li>
+            <li>Work Well under Pressure</li>
+            <li>Expert Troubleshooting</li>
+            <li>Word</li>
+            <li>Excel</li>
+            <li>Powerpoint</li>
+            <li>Access</li>
+          </ul>
+        </br>
+          <li><b>Software Development</b></li></br>
+          <ul>
+            <li>Well Versed with Backend Development</li>
+            <li>General Experience with Frontend Development</li>
+          </ul>
+          </br>
+          <li><b>Most Used IDE's and Text Editors</b></li></br>
+          <ul>
+            <li>Adobe Creative Cloud</li>
+            <li>Atom</li>
+            <li>Azure</li>
+            <li>Eclipse</li>
+            <li>Komodo</li>
+            <li>Visual Studio</li>
+            <li>Notepad++</li>
+            <li>R Studio</li>
+            <li>Native GNU Editors (in this order)</li>
+            <ul>
+              <li>Nano</li>
+              <li>Vim</li>
+              <li>Emacs</li>
+            </ul>
+          </ul>
+          </br>
+          <li><b>Languages</b></li></br>
+          <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>C#</li>
+            <li>HTML w/ CSS & JavaScript</li>
+            <li>Java</li>
+            <li>Linux GNU Bash</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>Ruby</li>
+            <li>SQL</li>
+            <li>Visual Basic</li>
+          </ul>
+          </br>
+          <li><b>Collaboration Techniques</b></li></br>
+          <ul>
+            <li>Github</li>
+            <li>Github Markdown</li>
+            <li>Github Pages</li>
+            <li>R Markdown</li>
+            <li>LATEX</li>
+            <li>Google Cloud Platform</li>
+            <li>Microsoft 365</li>
+            <li>Teletype</li>
+          </ul>
+          </br>
+          <li><b>Mathematics</b></li></br>
+          <ul>
+            <li>Fundemental Calculus on Multiple Dimensions</li>
+            <li>Differential Equations</li>
+            <li>Linear Algebra</li>
+            <li>Discrete Mathematics</li>
+            <li>Computation Theory</li>
+          </ul>
+      </div>
+      <div class="column">
+        <li><b>Data Structures</b></li>
         <ul>
-          <li>Nano</li>
-          <li>Vim</li>
-          <li>Emacs</li>
+          <li>Dynamic Arrays</li>
+          <li>Hash Tables</li>
+          <li>Indexed Sequential Structures</li>
+          <li>Lists</li>
+          <ul>
+            <li>Queues</li>
+            <li>Stacks</li>
+            <li>Linked(Circular and Straight)</li>
+          </ul>
+          <li>Heaps</li>
+          <li>Trees</li>
+          <ul>
+            <li>AVL</li>
+            <li>Red/Black</li>
+            <li>Binary</li>
+            <li>B</li>
+            <li>B+</li>
+            <li>Traversal</li>
+            <li>Zig and Zag</li>
+          </ul>
+          <li>Graphs</li>
+          <ul>
+            <li>Directed</li>
+            <li>Undirected</li>
+            <li>Shortest Path</li>
+          </ul>
         </ul>
-      </ul>
-      <li><b>Languages</b></li>
-      <ul>
-        <li>C</li>
-        <li>C++</li>
-        <li>C#</li>
-        <li>HTML w/ CSS & JavaScript</li>
-        <li>Java</li>
-        <li>Linux GNU Bash</li>
-        <li>Python</li>
-        <li>R</li>
-        <li>Ruby</li>
-        <li>SQL</li>
-        <li>Visual Basic</li>
-      </ul>
-      <li><b>Collaboration Techniques</b></li>
-      <ul>
-        <li>Github</li>
-        <li>Github Markdown</li>
-        <li>Github Pages</li>
-        <li>R Markdown</li>
-        <li>LATEX</li>
-        <li>Google Cloud Platform</li>
-        <li>Microsoft 365</li>
-        <li>Teletype</li>
-      </ul>
-      <li><b>Data Structures</b></li>
-      <ul>
-        <li>Dynamic Arrays</li>
-        <li>Hash Tables</li>
-        <li>Indexed Sequential Structures</li>
-        <li>Lists</li>
+        </br>
+        <li><b>Sorting Algortihms</b></li>
         <ul>
-          <li>Queues</li>
-          <li>Stacks</li>
-          <li>Linked(Circular and Straight)</li>
-        </ul>
-        <li>Heaps</li>
-        <li>Trees</li>
-        <ul>
-          <li>AVL</li>
-          <li>Red/Black</li>
+          <li>Insertion</li>
+          <li>Selection</li>
+          <li>Merge</li>
+          <li>Heap</li>
+          <li>Quick</li>
+          <li>Bubble</li>
+          <li>Radix</li>
           <li>Binary</li>
-          <li>B</li>
-          <li>B+</li>
-          <li>Traversal</li>
-          <li>Zig and Zag</li>
         </ul>
-        <li>Graphs</li>
+        </br>
+        <li><b>Random Number Algorithms</b></li>
         <ul>
-          <li>Directed</li>
-          <li>Undirected</li>
-          <li>Shortest Path</li>
+          <li>Random Nubmer Tables</li>
+          <li>Monte Carlo Method</li>
+          <li>Las Vegas Method</li>
         </ul>
-      </ul>
-      <li><b>Sorting Algortihms</b></li>
-      <ul>
-        <li>Insertion</li>
-        <li>Selection</li>
-        <li>Merge</li>
-        <li>Heap</li>
-        <li>Quick</li>
-        <li>Bubble</li>
-        <li>Radix</li>
-        <li>Binary</li>
-      </ul>
-      <li><b>Random Number Algorithms</b></li>
-      <ul>
-        <li>Random Nubmer Tables</li>
-        <li>Monte Carlo Method</li>
-        <li>Las Vegas Method</li>
-      </ul>
-      <li><b>Matrix Algorithms</b></li>
-      <li><b>Business</b></li>
-      <ul>
-        <li>Evaluating Supply and Demand</li>
-        <li>Equilibrium</li>
-        <li>Balance Sheets</li>
-        <li>Income Statements</li>
-        <li>Cash Flow</li>
-      </ul>
-      <li><b>Analysis</b></li>
-      <ul>
-        <li>Time Complexity of Algorithms</li>
-        <li>Space Complexity of Algorithms</li>
-        <li>Linear Models</li>
-        <li>Statistical Methods</li>
+        </br>
+        <li><b>Matrix Algorithms</b></li>
+        </br>
+        <li><b>Business</b></li>
         <ul>
-          <li>Bootstrapping</li>
-          <li>T Distributions</li>
+          <li>Evaluating Supply and Demand</li>
+          <li>Equilibrium</li>
+          <li>Balance Sheets</li>
+          <li>Income Statements</li>
+          <li>Cash Flow</li>
         </ul>
-      </ul>
-      <li><b>Mathematics</b></li>
-      <ul>
-        <li>Fundemental Calculus on Multiple Dimensions</li>
-        <li>Differential Equations</li>
-        <li>Linear Algebra</li>
-        <li>Discrete Mathematics</li>
-        <li>Computation Theory</li>
-      </ul>
-    </ol>
+        </br>
+        <li><b>Analysis</b></li>
+        <ul>
+          <li>Time Complexity of Algorithms</li>
+          <li>Space Complexity of Algorithms</li>
+          <li>Linear Models</li>
+          <li>Statistical Methods</li>
+          <ul>
+            <li>Bootstrapping</li>
+            <li>T Distributions</li>
+          </ul>
+        </ul>
+      </ol>
+      </div>
+    </div>
   </body>
 </html>
