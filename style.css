@@ -63,7 +63,7 @@ hr.titleRule {
   width: 101%;
 }
 
-.topnav {
+.navigation {
   float:left;
   width: 100.9%;
   margin: 0;
@@ -79,7 +79,7 @@ hr.titleRule {
     1px 1px 0 #777;
 }
 
-.topnav a {
+.navigation a {
   float: left;
   display: block;
   color: black;
@@ -89,12 +89,12 @@ hr.titleRule {
   font-size: 1.46vw;
 }
 
-.topnav a:hover {
+.navigation a:hover {
   background-color: #A1A1A1;
   color: black;
 }
 
-.topnav a.active {
+.navigation a.active {
   background-color: #A1A1A1;
   color: white;
 }
