@@ -137,7 +137,7 @@ function research() {
 var skillslist = [];
 skillslist[0] = ["General Skills", "Leadership", "Communication", "Time Management", "Adaptability", "Work Well under Pressure", "Expert Troubleshooting", "Microsoft Office"];
 skillslist[1] = ["Software Development", "Well Versed with Backend Development", "General Experience with Frontend"];
-skillslist[2] = ["Most Used IDE's and Text Editors", "Atom", "Azure", "Eclipse", "Notepad++", "R Studio", "Nano", "Vim", "Emacs"];
+skillslist[2] = ["Most Used IDE's and Text Editors", "Atom", "Azure", "Eclipse", "Notepad++", "R Studio", "Nano", "Vim", "Emacs", "Visual Studio"];
 skillslist[3] = ["Languages(High -> Low)", "C", "C++", "Java", "SQL", "R", "Bash", "Python", "Ruby", "Barebones JavaScript", "Visual Basic", "C#"];
 skillslist[4] = ["Collaboration Techniques", "Github", "Github Markdown", "Github Pages", "R Markdown", "LATEX", "Google Cloud Platform", "Google and One Drive", "Teletype"];
 skillslist[5] = ["Mathematics", "Fundemental Calculus on Multiple Dimensions", "Differential Equations", "Linear Algebra", "Discrete Mathematics", "Computation Theory"];
@@ -182,11 +182,11 @@ function skills() {
 
 
 var algorithmlist = [];
-algorithmlist[0] = ["Data Structures", "Dynamic Arrays", "Hash Tables", "Indexed Sequential Structures", "Lists", "Queues", "Stacks", "Linked(Circular and Straight)", "Heaps", "AVL Trees", "Red/Black Trees", "Binary Trees", "B Trees", "B+ Trees", "Tree Traversal", "Zig and Zag", "Directed Graphs", "Undirected Graphs", "Dijkstra", "A* Search"];
-algorithmlist[1] = ["Sorting Algortihms", "Insertion", "Selection", "Merge", "Heap", "Quick", "Bubble", "Radix", "Binary"];
+algorithmlist[0] = ["Data Structures", "Dynamic Arrays", "Hash Tables", "Indexed Sequential Structures", "Queues", "Stacks", "Linked List(Circular and Straight)", "Heaps", "Binary Trees", "B Trees", "Tree Traversal", "Directed Graphs", "Dijkstra", "A* Search"];
+algorithmlist[1] = ["Sorting Algortihms", "Insertion", "Selection", "Merge", "Quick", "Bubble", "Radix", "Binary"];
 algorithmlist[2] = ["Random Number Algorithms", "Random Number Tables", "Monte Carlo Method", "Las Vegas Method"];
 algorithmlist[3] = ["Matrix Algorithms"];
-algorithmlist[4] = ["Analysis", "Time Complexity of Algorithms", "Space Complexity of Algorithms", "Linear Models", "Bootstrapping", "T Distributions"];
+algorithmlist[4] = ["Analysis", "Time Complexity of Algorithms", "Space Complexity of Algorithms", "Linear and Quadratic Models", "T Distributions"];
 
 function algorithms() {
   document.getElementById("information").innerHTML = "";
