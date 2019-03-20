@@ -1,23 +1,39 @@
 <!Doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
     <title>CGlenn Resume</title>
   </head>
   <body>
 
-    <!-- Title -->
-    <h1>Clayton "Chase" Glenn</h1>
-    <h3>(580) 362-7999 • 5400 East River Road, Newkirk, OK, 74647 • 1111 Oaktree, Apt 334 , Norman 73072 • Glen5641@ou.edu</h3>
-    <hr class="titleRule">
+    <div class="titleBar">
+      <div class="title">
+        <h1>Clayton "Chase" Glenn</h1>
+        <h3>(580) 362-7999 | 5400 East River Road, Newkirk, OK, 74647 | 1111 Oaktree, Apt 334 , Norman 73072 | Glen5641@ou.edu</h3>
+      </div>
 
-    <div class="navigation">
-      <a href="#Objectives"                class="button1">Objectives                </a>
-      <a href="#Education"                 class="button1">Education	                </a>
-      <a href="#Research and Experience" 	 class="button2">Research and Experience		</a>
-      <a href="#Skills" 									 class="button1">Skills			              </a>
+      <div class="navigation">
+        <a href="javascript:objectives();"  class="button1">Objectives              </a>
+        <a href="javascript:education();"   class="button1">Education	              </a>
+        <a href="javascript:research();"    class="button2">Research and Experience	</a>
+        <a href="javascript:skills();"      class="button1">Skills			            </a>
+        <a href="javascript:algorithms();"  class="button1">Algorithms			        </a>
+      </div>
     </div>
+
+  <div class="resume_pic">
+    <img src="resume_pic.jpg" alt="Clayton Glenn">
+  </div>
+  <div class="information" id="information">
+  </div>
+  <script>
+  objectives();
+  </script>
+
+
+
+    <!-- Title
 
     <hr class="titleRule">
     </br>
@@ -271,6 +287,6 @@
         </ul>
       </ol>
       </div>
-    </div>
+    </div>-->
   </body>
 </html>
