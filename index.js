@@ -103,10 +103,11 @@ function education() {
 }
 
 var researchList = [];
-researchList[0] = ["On-Site-Rep / Field Technician", " Single Digits, Inc. July 2017 - Present", "Creating rapport through customer relations on multiple apartment complexes, interacting with engineers and other technicians to troubleshoot, configure, and maintain hardware through Linux, and establishing network knowledge through frequencies of wireless fidelity, fiber, ethernet connections, and surveillance."];
-researchList[1] = ["Consultation and Development", " Commons on Oak Tree October 2017 - Present", "Aiding the apartment complex with on-site technical assistance and developing multiple programs such as Electric Overage Calculators and (Presently In Development) a complex multi-use resident matching, overage, and searching program using multiple languages to inherit the perks of the strengths of the languages."];
-researchList[2] = ["Resident Advisor", " Northern Oklahoma College August 2014 - May 2016", "Creating a thriving and sociable living environment for incoming and returning residents in the dormitories within the rules of the college."];
-researchList[3] = ["Machinist and Farm Hand", " Moonlight Machine and Peter Farms October 2010 - May 2014", "Enduring long work days and allowing myself satisfaction from optimizing repetitive tasks and being able to visualize and troubleshoot equipment. This has been the basis of my integrity as a hard worker."];
+researchList[0] = ["Leasing Agent", " Commons on Oak Tree June 2019 - Present", "Working with and Developing a rapport with Residents and allowing a safe environment for Residents/Students to develop. Furthering my consultations with the property in accessing property situations and building quotes for new technologies and integrations within the property."];
+researchList[1] = ["On-Site-Rep / Field Technician", " Single Digits, Inc. July 2017 - Present", "Creating rapport through customer relations on multiple apartment complexes, interacting with engineers and other technicians to troubleshoot, configure, and maintain hardware through Linux, and establishing network knowledge through frequencies of wireless fidelity, fiber, ethernet connections, and surveillance."];
+researchList[2] = ["Consultation and Development", " Commons on Oak Tree October 2017 - Present", "Aiding the apartment complex with on-site technical assistance and developing multiple programs such as Electric Overage Calculators and (Presently In Development) a complex multi-use resident matching, overage, and searching program using multiple languages to inherit the perks of the strengths of the languages."];
+researchList[3] = ["Resident Advisor", " Northern Oklahoma College August 2014 - May 2016", "Creating a thriving and sociable living environment for incoming and returning residents in the dormitories within the rules of the college."];
+researchList[4] = ["Machinist and Farm Hand", " Moonlight Machine and Peter Farms October 2010 - May 2014", "Enduring long work days and allowing myself satisfaction from optimizing repetitive tasks and being able to visualize and troubleshoot equipment. This has been the basis of my integrity as a hard worker."];
 function research() {
   document.getElementById("information").innerHTML = "";
 
@@ -136,7 +137,7 @@ function research() {
 
 var skillslist = [];
 skillslist[0] = ["General Skills", "Leadership", "Communication", "Time Management", "Adaptability", "Work Well under Pressure", "Expert Troubleshooting", "Microsoft Office"];
-skillslist[1] = ["Software Development", "Well Versed with Backend Development", "General Experience with Frontend"];
+skillslist[1] = ["Software Development", "Experienced with Backend development, UIs and Skills with Frontend and Functional languages such as Scheme and Lisp. Experience with Multithreading, Multiple Processes, and Sockets. Understanding of TCP/IP and UDP Protocols. Experience with Eclipse, Visual Studio, Adobe Creative Cloud, Azure, Atom, Notepad++, ROS, MIPS, and Linux Systems. Languages include: Java/Gradle; C++; C; R; SQL; Python; MPI; OpenMP; "];
 skillslist[2] = ["Most Used IDE's and Text Editors", "Atom", "Azure", "Eclipse", "Notepad++", "R Studio", "Nano", "Vim", "Emacs", "Visual Studio"];
 skillslist[3] = ["Languages(High -> Low)", "C", "C++", "Java", "SQL", "R", "Bash", "Python", "Ruby", "Barebones JavaScript", "Visual Basic", "C#"];
 skillslist[4] = ["Collaboration Techniques", "Github", "Github Markdown", "Github Pages", "R Markdown", "LATEX", "Google Cloud Platform", "Google and One Drive", "Teletype"];
