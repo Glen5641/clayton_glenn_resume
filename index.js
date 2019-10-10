@@ -137,10 +137,10 @@ function research() {
 
 var skillslist = [];
 skillslist[0] = ["General Skills", "Leadership", "Communication", "Time Management", "Adaptability", "Work Well under Pressure", "Expert Troubleshooting", "Microsoft Office"];
-skillslist[1] = ["Software Development", "Experienced with Backend development, UIs and Skills with Frontend and Functional languages such as Scheme and Lisp. Experience with Multithreading, Multiple Processes, and Sockets. Understanding of TCP/IP and UDP Protocols. Experience with Eclipse, Visual Studio, Adobe Creative Cloud, Azure, Atom, Notepad++, ROS, MIPS, and Linux Systems. Languages include: Java/Gradle; C++; C; R; SQL; Python; MPI; OpenMP; "];
+skillslist[1] = ["Software Development", "Experienced with Backend development", "UIs and Skills with Frontend and Functional languages such as Scheme and Lisp.", "Experience with Multithreading, Multiple Processes, and Sockets.", "Understanding of TCP/IP and UDP Protocols.", "Experience with GCP, Azure, ROS, MIPS, and Linux Systems."];
 skillslist[2] = ["Most Used IDE's and Text Editors", "Atom", "Azure", "Eclipse", "Notepad++", "R Studio", "Nano", "Vim", "Emacs", "Visual Studio"];
-skillslist[3] = ["Languages(High -> Low)", "C", "C++", "Java", "SQL", "R", "Bash", "Python", "Ruby", "Barebones JavaScript", "Visual Basic", "C#"];
-skillslist[4] = ["Collaboration Techniques", "Github", "Github Markdown", "Github Pages", "R Markdown", "LATEX", "Google Cloud Platform", "Google and One Drive", "Teletype"];
+skillslist[3] = ["Languages", "Imperative: C, C++, Java", "Functional: Lisp", "Scripting: Python, Javascript, Bash, Ruby", "Database and Statistics: MySQL, R, Python"];
+skillslist[4] = ["Collaboration Techniques", "Github", "Github Markdown", "Github Pages", "R Markdown", "LATEX", "Google GCP and One Drive", "Teletype"];
 skillslist[5] = ["Mathematics", "Fundemental Calculus on Multiple Dimensions", "Differential Equations", "Linear Algebra", "Discrete Mathematics", "Computation Theory"];
 skillslist[6] = ["Business", "Evaluating Supply and Demand", "Equilibrium", "Balance Sheets", "Income Statements", "Cash Flow"];
 
