@@ -1,0 +1,260 @@
+{
+  "about": {
+    "text": "Driven and adaptable software engineer with a passion for crafting innovative solutions that  optimize functionality and enhance user experiences, back-end and front-end. Committed to  leveraging a strong foundation in software development to contribute to cutting-edge projects  and drive technological advancement. Seeking opportunities to collaborate within dynamic teams, tackle complex challenges, and continue to grow professionally, all while delivering high-quality, eﬃcient, and sustainable LEAST CODE software solutions. Aspirations, through time employed and building personal projects, are to meet and overcome client’s needs and allow data to serve its purpose through well-kempt storages and visualizations.",
+    "img": "20250726_171312.png"
+  },
+  "experience": [
+    {
+      "title": "Engineering Team Lead",
+      "company": "Adlumin/N-Able",
+      "from": "March 2024",
+      "to": "Current",
+      "description": [
+        { "style": "normal", "text": "Leading engineering efforts to " },
+        { "style": "bold italic", "text": "design, build, and optimize scalable systems " },
+        { "style": "normal", "text": "across a global organization. Architecting AWS-based solutions for reliability and fault tolerance, and driving ingestion and transformation of terabytes of data into OpenSearch. Leading CI/CD adoption, monitoring improvements, and integration projects while coordinating cross-team collaboration and acquisition onboarding." }
+      ],
+      "contributions": [
+        [
+          { "style": "bold", "text": "Global Python Package: "},
+          { "style": "normal", "text": "Designed a "},
+          { "style": "bold italic", "text": "reusable Python package "},
+          { "style": "normal", "text": "leveraged division-wide, improving stability/security of new code and reducing complexity by "},
+          { "style": "bold italic", "text": "80%" },
+          { "style": "normal", "text": "." }
+        ],
+        [
+          { "style": "bold", "text": "AWS Architecture: "},
+          { "style": "normal", "text": "Architecting solutions across multiple "},
+          { "style": "bold italic", "text": "AWS services "},
+          { "style": "normal", "text": "to deliver scalable, fault-tolerant systems." }
+        ],
+        [
+          { "style": "bold", "text": "Data Ingestion & ETL: "},
+          { "style": "normal", "text": "Optimizing ingestion of "},
+          { "style": "bold italic", "text": "terabytes of data into OpenSearch" },
+          { "style": "normal", "text": ", building ETL pipelines from APIs, webhooks, and forwarders with enrichment and standardization." }
+        ],
+        [
+          { "style": "bold", "text": "CI/CD & Monitoring: "},
+          { "style": "normal", "text": "Implementing "},
+          { "style": "bold italic", "text": "Jenkins CI/CD pipelines "},
+          { "style": "normal", "text": "and enhanced monitoring/metrics, improving release velocity and system reliability." }
+        ],
+        [
+          { "style": "bold", "text": "Cross-Platform Integrations: "},
+          { "style": "normal", "text": "Built bi-directional integrations between "},
+          { "style": "bold italic", "text": "Jira, ConnectWise, Autotask, and Halo "},
+          { "style": "normal", "text": "ticketing systems for seamless cross-platform operations." }
+        ],
+        [
+          { "style": "bold", "text": "Acquisition Onboarding: "},
+          { "style": "normal", "text": "Directed onboarding during company acquisition, creating "},
+          { "style": "bold italic", "text": "isolated test environments "},
+          { "style": "normal", "text": "and safely decoupling tests from production." }
+        ],
+        [
+          { "style": "bold", "text": "Leadership & Collaboration: "},
+          { "style": "normal", "text": "Leading a core team while heavily collaborating with other teams, "},
+          { "style": "bold italic", "text": "driving development discussions "},
+          { "style": "normal", "text": "and ensuring alignment across multiple groups." }
+        ],
+        [
+          { "style": "bold", "text": "Deployment Safeguards: "},
+          { "style": "normal", "text": "Enacting safeguards for manual deployments until "},
+          { "style": "bold italic", "text": "CI/CD is fully implemented "},
+          { "style": "normal", "text": "across all services." }
+        ]
+      ],
+      "languages": [
+        "Python Multi Version/Environment",
+        "Go Lang",
+        "Docker",
+        "Terraform"
+      ],
+      "stacks": [
+        "Lambda",
+        "ECS",
+        "S3",
+        "PostgresSQL (Aurora RDB)",
+        "DynamoDB",
+        "SQS",
+        "Cloudwatch + Metrics",
+        "OpenSearch",
+        "Code Artifact",
+        "Secrets Manager",
+        "ElastiCache",
+        "API Gateway",
+        "Jenkins",
+        "Artifactory",
+        "Jira / ConnectWise / Autotask / Halo Integrations",
+        "Github",
+        "Bitbucket"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Capital One Auto Finance",
+      "from": "May 2022",
+      "to": "March 2024",
+      "description": [
+        { "style": "normal", "text": "Initiated, built, collaborated on, and maintained " },
+        { "style": "bold italic", "text": "end-to-end identity systems " },
+        { "style": "normal", "text": "for dealers and dealer groups across business, sales, and internal platforms. Ensured code quality, resiliency, and reusability while balancing deep technical expertise with broad “jack of all trades” adaptability to drive cross-team collaboration and evolving technology adoption." }
+      ],
+      "contributions": [
+        [
+          { "style": "bold", "text": "Identity Management at Scale: "},
+          { "style": "normal", "text": "Led end-to-end identity management for "},
+          { "style": "bold italic", "text": "50,000+ storefronts, dealers, and dealer groups "},
+          { "style": "normal", "text": "securing operations across risk, sales, and internal platforms."}
+        ],
+        [
+          { "style": "bold", "text": "DevOps Ownership: "},
+          { "style": "normal", "text": "Proactively removed delivery impediments and owned "},
+          { "style": "bold italic", "text": "DevOps practices "},
+          { "style": "normal", "text": ", ensuring reliability, scalability, and operational excellence."}
+        ],
+        [
+          { "style": "bold", "text": "Reusable Products: "},
+          { "style": "normal", "text": "Delivered "},
+          { "style": "bold italic", "text": "reusable, enterprise-grade software components"},
+          { "style": "normal", "text": ", enabling consistency and maintainability across teams."}
+        ],
+        [
+          { "style": "bold", "text": "Agile Execution: "},
+          { "style": "normal", "text": "Championed "},
+          { "style": "bold italic", "text": "agile methodologies"},
+          { "style": "normal", "text": ", breaking down large initiatives into sprint-sized deliverables to accelerate value delivery."}
+        ],
+        [
+          { "style": "bold", "text": "Cross-Functional Collaboration: "},
+          { "style": "normal", "text": "Bridged engineering, sales, and business teams by applying both "},
+          { "style": "bold italic", "text": "specialist depth "},
+          { "style": "normal", "text": "and "},
+          { "style": "bold italic", "text": "generalist breadth"},
+          { "style": "normal", "text": ", ensuring technical and operational alignment."}
+        ]
+      ],
+      "languages": [
+        "Java SpringBoot W/ Maven",
+        "Python W/ PipEnv/Pip Combo",
+        "Apex",
+        "JavaScript",
+        "Automation Scripts"
+      ],
+      "stacks": [
+        "Kafka",
+        "Aurora PostgresSQL",
+        "Aurora OracleSQL",
+        "Neptune",
+        "Data Lakes",
+        "Lambda",
+        "ECS",
+        "Jenkins With Bogie Gears",
+        "Splunk",
+        "New Relic"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Symphonic Source",
+      "from": "February 2020",
+      "to": "April 2022",
+      "description": [
+        { "style": "normal", "text": "Applied engineering principles to " },
+        { "style": "bold italic", "text": "design, develop, and maintain scalable systems " },
+        { "style": "normal", "text": "leveraging large secured databases. Contributed across the full software development lifecycle — from profiling, maintenance, and upgrades to troubleshooting complex logic and optimizing user interfaces. Adapted quickly to challenges in a " },
+        { "style": "bold italic", "text": "fast-paced environment" },
+        { "style": "normal", "text": ", balancing technical precision, ethical standards, and practical business requirements." }
+      ],
+      "contributions": [
+        [
+          { "style": "bold", "text": "Subscription & Quoting Platform: "},
+          { "style": "normal", "text": "Implemented and maintained a new "},
+          { "style": "bold italic", "text": "subscription and quoting base "},
+          { "style": "normal", "text": "serving enterprise customers, using automation rules to dynamically process customer data."}
+        ],
+        [
+          { "style": "bold", "text": "Framework Development: "},
+          { "style": "normal", "text": "Co-developed an internal "},
+          { "style": "bold italic", "text": "React Control framework "},
+          { "style": "normal", "text": "adopted company-wide, improving maintainability and accelerating frontend delivery."}
+        ],
+        [
+          { "style": "bold", "text": "UI Modernization: "},
+          { "style": "normal", "text": "Migrated legacy "},
+          { "style": "bold italic", "text": "Knockout.js interfaces "},
+          { "style": "normal", "text": "to a modern "},
+          { "style": "bold italic", "text": "MVC → React stack" },
+          { "style": "normal", "text": ", improving performance, user experience, and long-term maintainability."}
+        ],
+        [
+          { "style": "bold", "text": "Lifecycle Contributions: "},
+          { "style": "normal", "text": "Hands-on involvement in "},
+          { "style": "bold italic", "text": "profiling, maintenance, troubleshooting, and feature upgrades" },
+          { "style": "normal", "text": ", ensuring system stability and scalability."}
+        ],
+        [
+          { "style": "bold", "text": "Collaboration & Standards: "},
+          { "style": "normal", "text": "Partnered with cross-functional teams to deliver solutions aligned with "},
+          { "style": "bold italic", "text": "requirements, UX design standards, and rigorous testing practices" },
+          { "style": "normal", "text": ", maintaining both ethical and practical standards."}
+        ]
+      ],
+      "languages": ["C#", "JavaScript", "TypeScript", "React", "Knockout JS"],
+      "stacks": ["Entity Framework", "Transact SQL", "MySQL", "Wijmo"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "IoT Table Hub",
+      "description": "Built a coffee table with the capability to control many IoT instances of household. Touch pad used lazer depth perception to allow touching glass that had a projection of the User Interface instead of a touch screen. Used IFTTT for workflows and built in a sdk for text based queries to google home. Integrated APIs as well like Roku Remote API for additional functionality.",
+      "tech": ["Python", "Rasberry PI", "Lazer Sensor Bar", "Roku", "Google Home"]
+    },
+    {
+      "name": "Generator Efficiency Monitoring",
+      "description": "Full Stack Program using Cloud Architecture. Generates random inputs and outputs for generators and creates Dynamic RESTful Endpoints in test, then collects and aggregates generator data to send to consumer that performs efficiency modeling and stores in AWS S3 DataLake. A RESTful API is now accessible for a front-end REACT Website to display user indicated generator efficiency charts using past data and predictions by linear regression.",
+      "tech": ["Java", "Javascript", "S3"]
+    },
+    {
+      "name": "Targeted Resident Renewals",
+      "description": "Python Script that collects 2 csv files including an alpha list and renewal list and joins the tables to collect certain residents who need to be targeted for renewals.",
+      "tech": ["Java"]
+    },
+    {
+      "name": "Vipir",
+      "description": "User Interface that connected to Google’s YouTube API via Oauth. Allowed filtering and video display to allow users to watch desired videos. Team used GitHub to collaborate and GitHub’s Version Control along with Atom’s Teletype to connect independent code segments.",
+      "tech": ["Java"]
+    },
+    {
+      "name": "HACKLAHOMA Project - ForFarmersOnly",
+      "description": "Uses Twilio API to allow farmers to send text messages for grain donations instead of using 4g or internet, which is scarce in most rural locations. If the donation is at least an eighth of the bin itself, the farmer will experience a free bin cleaning which alleviates the farmer of the need to clean the bin themselves. Follows a quip pro quo methodology.",
+      "tech": ["Java", "Twilio API"]
+    },
+    {
+      "name": "Automated Speed Testing",
+      "description": "Used abandoned computer with Wi-Fi adapter as Linux Server to Main Distribution Frame Access Point and run script to access 2.4g and 5g bands to test download and upload speeds of apartment community and submit forms for Speed Testing.",
+      "tech": ["Java", "Ookla SDK"]
+    }
+  ],
+  "skills": ["Influence without Authority", "Communication", "Problem-Solving", "Accountability", "Collaboration", "Adaptability", "Empathy"],
+  "education": [
+    {
+      "icon": "https://media.licdn.com/dms/image/v2/C560BAQHUAusLnQ4ZMw/company-logo_100_100/company-logo_100_100/0/1631377965583?e=1758758400&v=beta&t=OJd5K8jSNt4QmR_P142JJ70RYNbo4GvnXUuc9qPNE7g",
+      "school": "University of Oklahoma",
+      "degree": "B.S. in Computer Science | Minor in Mathematics",
+      "year": "2019"
+    }
+  ],
+  "contacts": [
+    {
+      "img": "https://img.icons8.com/ios-filled/50/linkedin.png",
+      "link": "https://www.linkedin.com/in/glen5641/"
+    },
+    {
+      "img": "https://img.icons8.com/glyph-neue/64/github.png",
+      "link": "https://github.com/Glen5641"
+    }
+  ]
+}
