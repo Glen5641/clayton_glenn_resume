@@ -1,292 +1,55 @@
-<!Doctype html>
-<html>
-  <head>
-    <link rel="stylesheet" href="index.css">
-    <script type="text/javascript" src="index.js"></script>
-    <title>CGlenn Resume</title>
-  </head>
-  <body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Resume</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
 
-    <div class="titleBar">
-      <div class="title">
-        <h1>Clayton "Chase" Glenn</h1>
-        <h3>(580) 362-7999 | 5400 East River Road, Newkirk, OK, 74647 | 1111 Oaktree, Apt 334 , Norman 73072 | Glen5641@ou.edu</h3>
-      </div>
+        <header class="top-banner">
+            <span>
+                <h1>Clayton "Chase" Glenn</h1>
+                <p>Engineering Team Lead | AWS Architect | Full Stack Engineer</p>
+            </span>
+            <span id="contact-information"></span>
+            <div id="avatar" class="avatar-slot" aria-hidden="true"></div>
+        </header>
 
-      <div class="navigation">
-        <a href="javascript:objectives();"  class="button1">Objectives              </a>
-        <a href="javascript:education();"   class="button1">Education	              </a>
-        <a href="javascript:research();"    class="button2">Research and Experience	</a>
-        <a href="javascript:skills();"      class="button1">Skills			            </a>
-        <a href="javascript:algorithms();"  class="button1">Algorithms			        </a>
-      </div>
-    </div>
+        <div class="container">
+            <nav class="sidebar">
+                <h2>Navigation</h2>
+                <ul>
+                    <li><a href="#" onclick="showSection('about')">About</a></li>
+                    <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+                    <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+                </ul>
+            </nav>
 
-  <div class="resume_pic">
-    <img src="resume_pic.jpg" alt="Clayton Glenn">
-  </div>
-  <div class="information" id="information">
-  </div>
-  <script>
-  objectives();
-  </script>
+            <main class="content">
+                <section id="about" class="section active">
+                    <div id="education-list"></div>
+                    <div id="about-information"></div>
+                </section>
 
+                <section id="experience" class="section active">
+                    <h2>Experience</h2>
+                    <div id="experience-list"></div>
+                </section>
 
+                <section id="projects" class="section active">
+                    <h2>Projects</h2>
+                    <div id="projects-list"></div>
+                </section>
 
-    <!-- Title
-
-    <hr class="titleRule">
-    </br>
-
-    <a id="Objectives"><h2>Objectives</h2></a>
-    Diligent Computer Science student with business and mathematical background, leadership, organizational skills, and
-    a wide array of trait experience. I am seeking to apply my abilities and education to learn and adapt to an industry
-    environment to further pursue my Computer Science career, and to develop and/or maintain new skills for
-    efficiency and optimization.</br></br>
-
-    <a id="Education"><h2>Education</h2></a>
-    <ul>
-      <li><b>University of Oklahoma Present Norman, OK</b></li>
-      <ul>
-        <li>B.Sc. Computer Science of Engineering College/ Mathematics Minor</li>
-        <li>Athletics & Activities
-          <ul>
-            <li>Dean’s Honor Roll</li>
-            <li>Cheerleading</li>
-            <li>Sooner Off-Road Racing</li>
-          </ul>
-        <li>Strong Emphasis on
-        <ul>
-          <li>Object Oriented Design</li>
-          <li>Adobe Cloud</li>
-          <li>Mathematical Sciences</li>
-          <li>Algorithms and Structures</li>
-          <li>Analysis and Complexity of Algorithms</li>
-          <li>Computer Organization and Operating Systems</li>
-          <li>Early and Late Stage</li>
-          <li>backend Software Development</li>
-          <li>Computational Ethics</li>
-          <li>Linux Development</li>
-        </ul>
-      </ul>
-      <li><b>Northern Oklahoma College May 2016 Tonkawa, OK</b></li>
-      <ul>
-        <li>AB in Business College Computer Science / Management and Information Systems</li>
-        <li>Honors & Activities</li>
-        <ul>
-          <li>Dean’s Honor Roll</li>
-          <li>Computer and Math Class Tutor</li>
-          <li>Resident Advisor</li>
-        </ul>
-        <li>Clubs & Athletics</li>
-        <ul>
-          <li>Rho Delta Rho President</li>
-          <li>Cheerleading.</li>
-        </ul>
-        <li>Emphasis on</li>
-        <ul>
-          <li>Business Macro/Micro Economics</li>
-          <li>Office (Word, Excel, Power Point, Access)</li>
-          <li>Financial and Managerial Accounting</li>
-          <li>Iterative Programming</li>
-          <li>Business Ethics</li>
-        </ul>
-      </ul>
-    </ul>
-
-    <a id="Research and Experience"><h2>Research and Experience</h2></a>
-    <table style="width:100%">
-      <tr>
-        <td class="emp">On-Site-Rep / Field Technician</br>
-            Single Digits, Inc.</br>
-            July 2017 - Present</br>
-        </td>
-        <td>
-          Creating rapport through customer relations
-          on many apartment complexes, interacting
-          with engineers and other technicians to
-          troubleshoot, configure, and maintain
-          hardware through Linux, and establishing
-          network knowledge through frequencies of
-          wireless fidelity, fiber, ethernet
-          connections, and surveillance.</br>
-        </td>
-      </tr>
-      <tr>
-        <td class="emp">
-          Consultation and Development</br>
-          Commons on Oak Tree</br>
-          October 2017 - Present</br>
-        </td>
-        <td>
-          Aiding the apartment complex with on-site
-          technical assistance and developing multiple
-          programs such as Electric Overage Calculators
-          and (Presently In Development) a complex
-          multi-use resident matching, overage, and
-          searching program using multiple languages
-          to inherit the perks of the strengths of the
-          languages.</br>
-        </td>
-      </tr>
-    </table>
-
-
-
-
-    </br></br>
-    <a id="Skills"><h2>Skills</h2></a>
-    <div class="row">
-      <div class="column">
-        <ol>
-          <li><b>General Skills</b></li></br>
-          <ul>
-            <li>Leadership</li>
-            <li>Communication</li>
-            <li>Time Management</li>
-            <li>Adaptability</li>
-            <li>Work Well under Pressure</li>
-            <li>Expert Troubleshooting</li>
-            <li>Word</li>
-            <li>Excel</li>
-            <li>Powerpoint</li>
-            <li>Access</li>
-          </ul>
-        </br>
-          <li><b>Software Development</b></li></br>
-          <ul>
-            <li>Well Versed with Backend Development</li>
-            <li>General Experience with Frontend Development</li>
-          </ul>
-          </br>
-          <li><b>Most Used IDE's and Text Editors</b></li></br>
-          <ul>
-            <li>Adobe Creative Cloud</li>
-            <li>Atom</li>
-            <li>Azure</li>
-            <li>Eclipse</li>
-            <li>Komodo</li>
-            <li>Visual Studio</li>
-            <li>Notepad++</li>
-            <li>R Studio</li>
-            <li>Native GNU Editors (in this order)</li>
-            <ul>
-              <li>Nano</li>
-              <li>Vim</li>
-              <li>Emacs</li>
-            </ul>
-          </ul>
-          </br>
-          <li><b>Languages</b></li></br>
-          <ul>
-            <li>C</li>
-            <li>C++</li>
-            <li>C#</li>
-            <li>HTML w/ CSS & JavaScript</li>
-            <li>Java</li>
-            <li>Linux GNU Bash</li>
-            <li>Python</li>
-            <li>R</li>
-            <li>Ruby</li>
-            <li>SQL</li>
-            <li>Visual Basic</li>
-          </ul>
-          </br>
-          <li><b>Collaboration Techniques</b></li></br>
-          <ul>
-            <li>Github</li>
-            <li>Github Markdown</li>
-            <li>Github Pages</li>
-            <li>R Markdown</li>
-            <li>LATEX</li>
-            <li>Google Cloud Platform</li>
-            <li>Microsoft 365</li>
-            <li>Teletype</li>
-          </ul>
-          </br>
-          <li><b>Mathematics</b></li></br>
-          <ul>
-            <li>Fundemental Calculus on Multiple Dimensions</li>
-            <li>Differential Equations</li>
-            <li>Linear Algebra</li>
-            <li>Discrete Mathematics</li>
-            <li>Computation Theory</li>
-          </ul>
-      </div>
-      <div class="column">
-        <li><b>Data Structures</b></li>
-        <ul>
-          <li>Dynamic Arrays</li>
-          <li>Hash Tables</li>
-          <li>Indexed Sequential Structures</li>
-          <li>Lists</li>
-          <ul>
-            <li>Queues</li>
-            <li>Stacks</li>
-            <li>Linked(Circular and Straight)</li>
-          </ul>
-          <li>Heaps</li>
-          <li>Trees</li>
-          <ul>
-            <li>AVL</li>
-            <li>Red/Black</li>
-            <li>Binary</li>
-            <li>B</li>
-            <li>B+</li>
-            <li>Traversal</li>
-            <li>Zig and Zag</li>
-          </ul>
-          <li>Graphs</li>
-          <ul>
-            <li>Directed</li>
-            <li>Undirected</li>
-            <li>Shortest Path</li>
-          </ul>
-        </ul>
-        </br>
-        <li><b>Sorting Algortihms</b></li>
-        <ul>
-          <li>Insertion</li>
-          <li>Selection</li>
-          <li>Merge</li>
-          <li>Heap</li>
-          <li>Quick</li>
-          <li>Bubble</li>
-          <li>Radix</li>
-          <li>Binary</li>
-        </ul>
-        </br>
-        <li><b>Random Number Algorithms</b></li>
-        <ul>
-          <li>Random Number Tables</li>
-          <li>Monte Carlo Method</li>
-          <li>Las Vegas Method</li>
-        </ul>
-        </br>
-        <li><b>Matrix Algorithms</b></li>
-        </br>
-        <li><b>Business</b></li>
-        <ul>
-          <li>Evaluating Supply and Demand</li>
-          <li>Equilibrium</li>
-          <li>Balance Sheets</li>
-          <li>Income Statements</li>
-          <li>Cash Flow</li>
-        </ul>
-        </br>
-        <li><b>Analysis</b></li>
-        <ul>
-          <li>Time Complexity of Algorithms</li>
-          <li>Space Complexity of Algorithms</li>
-          <li>Linear Models</li>
-          <li>Statistical Methods</li>
-          <ul>
-            <li>Bootstrapping</li>
-            <li>T Distributions</li>
-          </ul>
-        </ul>
-      </ol>
-      </div>
-    </div>-->
-  </body>
+                <section id="skills" class="section active">
+                    <h2>Skills</h2>
+                    <ul id="skills-list"></ul>
+                </section>
+            </main>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
