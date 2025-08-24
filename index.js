@@ -1,219 +1,303 @@
-/* DONE */
-var objectiveStatement =  "Diligent Computer Science student with business and mathematical background, leadership, organizational skills, and " +
-                          "a wide array of trait experience. I am seeking to apply my abilities and education to learn and adapt to an industry" +
-                          " environment to further pursue my Computer Science career, and to develop and/or maintain new skills for efficiency " +
-                          "and optimization. I believe I have great potential and can fulfill any request given to me along with using strong " +
-                          "troubleshooting abilities to debug and optimize code.";
-function objectives() {
-  document.getElementById("information").innerHTML = "";
-  informationHeading = document.createElement("h2");
-  informationHeading.appendChild(document.createTextNode("Objectives"));
+class helpers {
+    static formatText(item) {
+        if (item == null)
+            return "";
 
-  document.getElementById("information").appendChild(informationHeading);
-  document.getElementById("information").appendChild(document.createTextNode(objectiveStatement));
+        if (typeof item === 'string')
+            return item
 
-}
+        if (item.style.trim() === '')
+            return item.text
+        if (item.style.includes('italic')) {
+            item.style = item.style.replace('italic', '');
+            return `<em>${helpers.formatText(item)}</em>`;
+        }
+        if (item.style.includes('underline')) {
+            item.style = item.style.replace('underline', '');
+            return `<u>${helpers.formatText(item)}</u>`;
+        }
+        if (item.style.includes('bold')) {
+            item.style = item.style.replace('bold', '');
+            return `<strong>${helpers.formatText(item)}</strong>`;
+        }
+        if (item.style.includes('strikethrough')) {
+            item.style = item.style.replace('strikethrough', '');
+            return `<s>${helpers.formatText(item)}</s>`;
+        }
 
-var ouAthleticsActivities  = [ "Dean's Honor Roll", "Cheerleading", "Sooner Off-Road Racing", "Hacklahoma"];
-var ouStrongEmphasis  = [ "Object Oriented Design", "Algorithms and Structures", "Analysis and Complexity of Algorithms",
-                      "Computer Organization and Operating Systems", "Backend Software Development", "Computational Ethics"];
-var nocAthleticsActivities = [ "Dean's Honor Roll", "Computer and Math Class Tutor", "Resident Advisor",
-                      "Rho Delta Rho President", "Cheerleading"];
-var nocStrongEmphasis = [ "Business Macro/Micro Economics", "Office (Word, Excel, Power Point, Access)",
-                      "Financial and Managerial Accounting", "Business Ethics"];
-function education() {
-  document.getElementById("information").innerHTML = "";
-
-  var ul3 = document.createElement("ul");
-  for (i = 0; i < ouStrongEmphasis.length; i++) {
-    li = document.createElement("li");
-    li.appendChild(document.createTextNode(ouStrongEmphasis[i]));
-    ul3.appendChild(li);
-  }
-
-  var ul2 = document.createElement("ul");
-  for (i = 0; i < ouAthleticsActivities.length; i++) {
-    li = document.createElement("li");
-    li.appendChild(document.createTextNode(ouAthleticsActivities[i]));
-    ul2.appendChild(li);
-  }
-
-  var ul1 = document.createElement("ul");
-  li = document.createElement("li");
-  li.appendChild(document.createTextNode("B.Sc. Computer Science of Engineering College/ Mathematics Minor"));
-  ul1.appendChild(li);
-  li = document.createElement("li");
-  li.appendChild(document.createTextNode("Athletics & Activities"));
-  ul1.appendChild(li);
-  ul1.appendChild(ul2);
-  li = document.createElement("li");
-  li.appendChild(document.createTextNode("Strong Emphasis on"));
-  ul1.appendChild(li);
-  ul1.appendChild(ul3);
-
-  var edList = document.createElement("ul");
-  li = document.createElement("li");
-  bold = document.createElement('strong'),
-  textnode = document.createTextNode("University of Oklahoma Present Norman, OK");
-  bold.appendChild(textnode);
-  li.appendChild(bold);
-  edList.appendChild(li);
-  edList.appendChild(ul1);
-  li = document.createElement("li");
-  bold = document.createElement('strong'),
-  textnode = document.createTextNode("Northern Oklahoma College May 2016 Tonkawa, OK");
-  bold.appendChild(textnode);
-  li.appendChild(bold);
-  edList.appendChild(li);
-
-  ul3 = document.createElement("ul");
-  for (i = 0; i < nocStrongEmphasis.length; i++) {
-    li = document.createElement("li");
-    li.appendChild(document.createTextNode(nocStrongEmphasis[i]));
-    ul3.appendChild(li);
-  }
-
-  ul2 = document.createElement("ul");
-  for (i = 0; i < nocAthleticsActivities.length; i++) {
-    li = document.createElement("li");
-    li.appendChild(document.createTextNode(nocAthleticsActivities[i]));
-    ul2.appendChild(li);
-  }
-
-  var ul1 = document.createElement("ul");
-  li = document.createElement("li");
-  li.appendChild(document.createTextNode("AB in Business College Computer Science / Management and information Systems"));
-  ul1.appendChild(li);
-  li = document.createElement("li");
-  li.appendChild(document.createTextNode("Athletics & Activities"));
-  ul1.appendChild(li);
-  ul1.appendChild(ul2);
-  li = document.createElement("li");
-  li.appendChild(document.createTextNode("Strong Emphasis on"));
-  ul1.appendChild(li);
-  ul1.appendChild(ul3);
-  edList.appendChild(ul1);
-
-  var informationHeading = document.createElement("h2");
-  informationHeading.appendChild(document.createTextNode("Education"));
-
-  document.getElementById("information").appendChild(informationHeading);
-  document.getElementById("information").appendChild(edList);
-
-}
-
-var researchList = [];
-researchList[0] = ["Leasing Agent", " Commons on Oak Tree June 2019 - Present", "Working with and Developing a rapport with Residents and allowing a safe environment for Residents/Students to develop. Furthering my consultations with the property in accessing property situations and building quotes for new technologies and integrations within the property."];
-researchList[1] = ["On-Site-Rep / Field Technician", " Single Digits, Inc. July 2017 - Present", "Creating rapport through customer relations on multiple apartment complexes, interacting with engineers and other technicians to troubleshoot, configure, and maintain hardware through Linux, and establishing network knowledge through frequencies of wireless fidelity, fiber, ethernet connections, and surveillance."];
-researchList[2] = ["Consultation and Development", " Commons on Oak Tree October 2017 - Present", "Aiding the apartment complex with on-site technical assistance and developing multiple programs such as Electric Overage Calculators and (Presently In Development) a complex multi-use resident matching, overage, and searching program using multiple languages to inherit the perks of the strengths of the languages."];
-researchList[3] = ["Resident Advisor", " Northern Oklahoma College August 2014 - May 2016", "Creating a thriving and sociable living environment for incoming and returning residents in the dormitories within the rules of the college."];
-researchList[4] = ["Machinist and Farm Hand", " Moonlight Machine and Peter Farms October 2010 - May 2014", "Enduring long work days and allowing myself satisfaction from optimizing repetitive tasks and being able to visualize and troubleshoot equipment. This has been the basis of my integrity as a hard worker."];
-function research() {
-  document.getElementById("information").innerHTML = "";
-
-  var table = document.createElement("table");
-
-  for (i = 0; i < researchList.length; i++) {
-    tr = document.createElement("tr");
-    td = document.createElement("td");
-    td.style = "width: 25%;";
-    bold = document.createElement('strong');
-    bold.appendChild(document.createTextNode(researchList[i][0]));
-    td.appendChild(bold);
-    td.appendChild(document.createTextNode(researchList[i][1]));
-    tr.appendChild(td);
-    td = document.createElement("td");
-    td.appendChild(document.createTextNode(researchList[i][2]));
-    tr.appendChild(td);
-    table.appendChild(tr);
-  }
-
-  var informationHeading = document.createElement("h2");
-  informationHeading.appendChild(document.createTextNode("Research and Experience"));
-
-  document.getElementById("information").appendChild(informationHeading);
-  document.getElementById("information").appendChild(table);
-}
-
-var skillslist = [];
-skillslist[0] = ["General Skills", "Leadership", "Communication", "Time Management", "Adaptability", "Work Well under Pressure", "Expert Troubleshooting", "Microsoft Office"];
-skillslist[1] = ["Software Development", "Experienced with Backend development", "UIs and Skills with Frontend and Functional languages such as Scheme and Lisp.", "Experience with Multithreading, Multiple Processes, and Sockets.", "Understanding of TCP/IP and UDP Protocols.", "Experience with GCP, Azure, ROS, MIPS, and Linux Systems."];
-skillslist[2] = ["Most Used IDE's and Text Editors", "Atom", "Azure", "Eclipse", "Notepad++", "R Studio", "Nano", "Vim", "Emacs", "Visual Studio"];
-skillslist[3] = ["Languages", "Imperative: C, C++, Java", "Functional: Lisp", "Scripting: Python, Javascript, Bash, Ruby", "Database and Statistics: MySQL, R, Python"];
-skillslist[4] = ["Collaboration Techniques", "Github", "Github Markdown", "Github Pages", "R Markdown", "LATEX", "Google GCP and One Drive", "Teletype"];
-skillslist[5] = ["Mathematics", "Fundemental Calculus on Multiple Dimensions", "Differential Equations", "Linear Algebra", "Discrete Mathematics", "Computation Theory"];
-skillslist[6] = ["Business", "Evaluating Supply and Demand", "Equilibrium", "Balance Sheets", "Income Statements", "Cash Flow"];
-
-function skills() {
-  document.getElementById("information").innerHTML = "";
-
-  informationHeading = document.createElement("h2");
-  informationHeading.appendChild(document.createTextNode("Skills"));
-
-  list = document.createElement("ul");
-  list.classList.add('list');
-
-  for (i = 0; i < algorithmlist.length; i++) {
-    ul = document.createElement("ul");
-    li = document.createElement("li");
-    bold = document.createElement('strong'),
-    textnode = document.createTextNode(skillslist[i][0]);
-    bold.appendChild(textnode);
-    li.appendChild(bold);
-    ul.appendChild(li);
-    innerul = document.createElement("ul");
-    for (j = 1; j < skillslist[i].length; j++){
-      li = document.createElement("li");
-      li.appendChild(document.createTextNode(skillslist[i][j]));
-      innerul.appendChild(li);
+        return item.text;
     }
-    ul.appendChild(innerul);
-    list.appendChild(ul);
-  }
-  document.getElementById("information").appendChild(informationHeading);
-  document.getElementById("information").appendChild(list);
+
+    static buildText(enrichment_arr) {
+        if (enrichment_arr == null)
+            return "";
+
+        if (typeof enrichment_arr === 'string')
+            return enrichment_arr;
+
+        let text = enrichment_arr.map((item) => helpers.formatText(item));
+
+        return text.join('');
+    }
+
+    static renderChips(items = [], variant = "") {
+        if (!items || !items.length) return "";
+        const cls = variant ? ` chip--${variant}` : "";
+        return `<div class="chip-group">${items.map(i => `<span class="chip${cls}">${i}</span>`).join('')}</div>`;
+    }
+
+    static createPrintable() {
+        const headerName = document.querySelector('.top-banner h1')?.textContent || (data.about?.name || 'My Resume');
+        const photo = document.getElementById('avatar').children[0].src || '';
+
+        const itemsToRender = [
+            'my-info', 'education-list', 'experience-list', 'projects-list', 'skills-list'
+        ];
+
+        const renderables = Object.fromEntries(
+            itemsToRender.map((item) => {
+                let element = document.getElementById(item);
+                element.querySelectorAll(".chip-group").forEach(node => {
+                    node.remove();
+                });
+                element.querySelectorAll(".chip-title").forEach(node => {
+                    node.remove();
+                });
+                return [item, element.innerHTML]
+            })
+        );
+
+        return `
+        <!doctype html>
+        <html>
+            <head>
+                <meta charset="utf-8"/>
+                <title>Resume — ${headerName}</title>
+                <style>
+                    @page { size: A4; margin: 12mm; }
+                    body { font-family: Arial, sans-serif; line-height: 1.35; color: #000; }
+                    h2,h3,h4 { color: #000; margin: 0 0 6px 0; }
+                    img { max-width: 120px; border-radius: 50%; }
+                    header { display:flex; align-items:center; gap:16px; margin-bottom:12px; }
+                    section { margin-bottom: 20px; page-break-inside: avoid; }
+                    .experience-entry { border: 1px solid lightgray; border-radius: 10px; padding: 10px; margin-bottom: 10px; }
+                    .project-entry { border: 1px solid lightgray; border-radius: 10px; padding: 10px; margin-bottom: 10px; }
+                    .education-entry { padding: 10px; }
+                    .chip { display: inline-block; padding: 6px 10px; border-radius: 9999px; background: #eef2f7; border: 1px solid #d5dbe3; font-size: 0.9rem;
+                    line-height: 1; white-space: nowrap; margin-right: 3px; margin-bottom: 3px;}
+                    .chip--skill { background: #f2fbf2; border-color: #40ef40; }
+                    .chip--soft-skill { background: #f1e0bf; border-color: #efb840; }
+                </style>
+            </head>
+            <body>
+                <header>
+                    ${photo ? `<img src="${photo}" alt="Profile"/>` : ''}
+                    <div>
+                        <h1>${headerName}</h1>
+                        ${renderables["education-list"]}
+                    </div>
+                </header>
+                <section>
+                    <div>${renderables["my-info"]}</div>
+                </section>
+                <section>
+                    <h2>Experience</h2>
+                    <div>${renderables["experience-list"]}</div>
+                </section>
+                <section>
+                    <h2>Projects</h2>
+                    ${renderables["projects-list"]}
+                </section>
+                <section>
+                    <h2>Skills</h2>
+                    ${renderables["skills-list"]}
+                </section>
+            </body>
+        </html>
+     `;
+    }
 }
 
 
+function renderAvatar(about) {
+    const container = document.getElementById('avatar');
+    container.innerHTML = `<img id="headerAvatar" src="${about.img}" alt="Profile photo"/>`
+}
 
+function renderAbout(about) {
+    const container = document.getElementById('about-information');
+    container.innerHTML = `
+        <div class="two-cols">
+            <div id="my-info" class="left-col">
+                <h2>About Me</h2>
+                <p>${about.text}</p>
+            </div>
+            <div class="right-col"><img class="about-photo" src="${about.img}" alt="" /></div>
+        </div>
+    `;
+}
 
+function renderExperience(experiences) {
+    const container = document.getElementById('experience-list');
+    container.innerHTML = experiences.map(exp => `
+        <div class="experience-entry">
+            <div class="entry-title">
+                <h3>${exp.title} — ${exp.company}</h3>
+                <p><em>${exp.from} - ${exp.to}</em></p>        
+            </div>
+            <div class="entry-section">
+                <div>${helpers.buildText(exp.description)}</div>        
+            </div>
+            <div class="entry-section">
+                <div><strong>Key Contributions:</strong></div>
+                <ul style="padding-left: 20px">
+                ${exp.contributions.map(e => `<li>${helpers.buildText(e)}</li>`).join('')}     
+                </ul>
+            </div>
+            <div class="entry-section">
+                <div class="chip-title"><strong>Languages:</strong></div>
+                ${helpers.renderChips(exp.languages, 'lang')}       
+                <div class="chip-title"><strong>Stacks:</strong></div>
+                ${helpers.renderChips(exp.stacks, 'stack')}       
+            </div>                  
+        </div>
+  `).join('');
+}
 
+function renderProjects(projects) {
+    const container = document.getElementById('projects-list');
+    container.innerHTML = projects.map(proj => `
+        <div class="project-entry">
+            <h3>${proj.name}</h3>
+            <p>${proj.description}</p>
+            <div id="project-tech-list" class="chip-group">
+                ${(proj.tech).map(s => `<span class="chip chip--project">${s}</span>`).join('')}
+            </div>
+        </div>
+    `).join('');
+}
 
+function renderSkills(experiences, skills) {
+    const container = document.getElementById('skills-list');
+    let additionalSkills = [];
+    experiences.map((experience) => {
+        experience.languages.map(language => additionalSkills.push(language))
+        experience.stacks.map(stack => additionalSkills.push(stack))
+    });
 
+    const seen = new Set();
+    let skillsToShow = [];
+    additionalSkills.forEach((skill) => {
+        if (!seen.has(skill)) {
+            skillsToShow.push({ soft: false, skill: skill });
+            seen.add(skill);
+        }
+    });
+    skills.forEach((skill) => {
+        if (!seen.has(skill)) {
+            skillsToShow.push({ soft: true, skill: skill });
+            seen.add(skill);
+        }
+    });
 
+    skillsToShow.sort((a, b) => a.skill.localeCompare(b.skill));
 
-var algorithmlist = [];
-algorithmlist[0] = ["Data Structures", "Dynamic Arrays", "Hash Tables", "Indexed Sequential Structures", "Queues", "Stacks", "Linked List(Circular and Straight)", "Heaps", "Binary Trees", "B Trees", "Tree Traversal", "Directed Graphs", "Dijkstra", "A* Search"];
-algorithmlist[1] = ["Sorting Algortihms", "Insertion", "Selection", "Merge", "Quick", "Bubble", "Radix", "Binary"];
-algorithmlist[2] = ["Random Number Algorithms", "Random Number Tables", "Monte Carlo Method", "Las Vegas Method"];
-algorithmlist[3] = ["Matrix Algorithms"];
-algorithmlist[4] = ["Analysis", "Time Complexity of Algorithms", "Space Complexity of Algorithms", "Linear and Quadratic Models", "T Distributions"];
+    container.outerHTML = `
+        <div id="skills-list" class="chip-group">
+            ${(skillsToShow || []).map(s => `
+                <span class="chip ${s.soft ? "chip--soft-skill" : "chip--skill"}">${s.skill}</span>
+            `).join('')}
+        </div>
+    `;
+}
 
-function algorithms() {
-  document.getElementById("information").innerHTML = "";
+function renderEducation(education) {
+    const container = document.getElementById('education-list');
+    container.innerHTML = education.map(ed => `
+        <div class="education-entry">
+            <!-- SOURCED FROM LINKEDIN PUBLIC ICONS -->  
+            <h3>
+                <img width="30" src="https://media.licdn.com/dms/image/v2/C560BAQHUAusLnQ4ZMw/company-logo_100_100/company-logo_100_100/0/1631377965583?e=1758758400&amp;v=beta&amp;t=OJd5K8jSNt4QmR_P142JJ70RYNbo4GvnXUuc9qPNE7g" height="24" alt="University of Oklahoma – Gallogly College of Engineering logo" />
+                ${ed.school}
+            </h3>
+            <p>${ed.degree} — ${ed.year}</p>
+        </div>
+  `).join('');
+}
 
-  informationHeading = document.createElement("h2");
-  informationHeading.appendChild(document.createTextNode("Algorithms"));
+function renderContact(info) {
+    const container = document.getElementById('contact-information');
+    container.innerHTML = `
+        ${info.map(i => `
+            <span style="padding: 10px">
+                <a href="${i.link}" target="_blank"><img width="25" src="${i.img}" height="25" alt="LinkedIn" /></a>
+            </span>
+        `).join('')}
+        <span style="padding: 10px; cursor: pointer;" id="download-pdf" onclick="openPrintableResume()">
+            <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/pdf-2.png" alt="pdf-2"/>
+        </span>
+    `;
+}
 
-  list = document.createElement("ul");
-  list.classList.add('list');
-  for (i = 0; i < algorithmlist.length; i++) {
-    ul = document.createElement("ul");
-    li = document.createElement("li");
-    bold = document.createElement('strong'),
-    textnode = document.createTextNode(algorithmlist[i][0]);
-    bold.appendChild(textnode);
-    li.appendChild(bold);
-    ul.appendChild(li);
-    innerul = document.createElement("ul");
-    for (j = 1; j < algorithmlist[i].length; j++){
-      li = document.createElement("li");
-      li.appendChild(document.createTextNode(algorithmlist[i][j]));
-      innerul.appendChild(li);
+function showSection(sectionId) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(sectionId)?.classList.add('active');
+
+    const header = document.querySelector('.top-banner');
+    const aboutPhoto = document.querySelector('#about .about-photo');
+
+    const onAbout = sectionId === 'about';
+    if (header)
+        header.classList.toggle('has-avatar', !onAbout);
+    if (aboutPhoto)
+        aboutPhoto.classList.toggle('is-collapsed', !onAbout);
+}
+
+fetch('resume.json')
+    .then(res => res.json())
+    .then(data => {
+        renderAvatar(data.about);
+        renderAbout(data.about);
+        renderExperience(data.experience);
+        renderProjects(data.projects);
+        renderSkills(data.experience, data.skills);
+        renderEducation(data.education);
+        renderContact(data.contacts)
+    });
+
+function openPrintableResume() {
+    const printable = window.open('about:blank');
+
+    const html = helpers.createPrintable();
+
+    if (printable && !printable.closed) {
+        printable.document.open();
+        printable.document.write(html);
+        printable.document.close();
+        printable.onload = () => printable.print();
+        try {
+            printable.focus();
+        } catch {}
+        return;
     }
-    ul.appendChild(innerul);
-    list.appendChild(ul);
-  }
-  document.getElementById("information").appendChild(informationHeading);
-  document.getElementById("information").appendChild(list);
+
+    const iframe = document.createElement('iframe');
+    iframe.style.position = 'fixed';
+    iframe.style.right = '0';
+    iframe.style.bottom = '0';
+    iframe.style.width = '0';
+    iframe.style.height = '0';
+    iframe.style.border = '0';
+    document.body.appendChild(iframe);
+    const doc = iframe.contentWindow.document;
+    doc.open();
+    doc.write(html);
+    doc.close();
+    iframe.onload = () => {
+        try {
+            iframe.contentWindow.focus();
+        } catch {}
+        iframe.contentWindow.print();
+        setTimeout(() => document.body.removeChild(iframe), 1000);
+    };
 }
