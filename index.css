@@ -78,14 +78,12 @@ body {
     right: 0;
     background: var(--banner-bg);
     color: var(--banner-text);
-    text-align: center;
     padding: 15px 20px;
     z-index: 1000;
     border-bottom: 3px solid var(--banner-border);
 }
 
 .top-banner h1 {
-    margin-top: 20px;
     margin-bottom: 5px;
     font-size: 1.8rem;
 }
@@ -319,6 +317,10 @@ h2 {
     .container {
         flex-direction: column;
         height: auto;
+    }
+
+    .top-banner h1 {
+        margin-top: 20px;
     }
 
     /* Sidebar becomes a top nav */
