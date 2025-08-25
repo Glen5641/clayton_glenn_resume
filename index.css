@@ -354,6 +354,7 @@ h2 {
     .two-cols {
         flex-direction: column;
         gap: 12px;
+        margin-bottom: 40px;
     }
     .right-col img {
         width: 100%;
