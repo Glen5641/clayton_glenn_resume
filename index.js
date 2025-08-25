@@ -1,3 +1,12 @@
+(function() {
+    try {
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const dark = saved ? (saved === 'dark') : prefersDark;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+} catch(e) {}
+})();
+
 class helpers {
     static formatText(item) {
         if (item == null)
@@ -229,14 +238,22 @@ function renderContact(info) {
     const container = document.getElementById('contact-information');
     container.innerHTML = `
         ${info.map(i => `
-            <span style="padding: 10px">
+            <span class="icon_items">
                 <a href="${i.link}" target="_blank"><img width="25" src="${i.img}" height="25" alt="LinkedIn" /></a>
             </span>
         `).join('')}
-        <span style="padding: 10px; cursor: pointer;" id="download-pdf" onclick="openPrintableResume()">
-            <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/pdf-2.png" alt="pdf-2"/>
+        <span class="icon_items" id="download-pdf" onclick="openPrintableResume()">
+            <img width="24" height="24" src="https://img.icons8.com/3d-fluency/94/download.png" alt="pdf-2"/>
+        </span>
+        <span class="icon_items" id="theme-toggle" aria-pressed="false" title="Toggle theme">
+            <img id="theme-icon" width="25" height="25"
+                src="https://img.icons8.com/isometric/50/light-off.png"
+                alt="Toggle dark mode"/>
         </span>
     `;
+
+    setupThemeToggle();
+
 }
 
 function showSection(sectionId) {
@@ -300,4 +317,42 @@ function openPrintableResume() {
         iframe.contentWindow.print();
         setTimeout(() => document.body.removeChild(iframe), 1000);
     };
+}
+
+function setupThemeToggle() {
+    const root = document.documentElement;
+    const btn = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+    if (!btn || !icon) return; // not rendered yet
+
+    const ICONS = {
+        dark: "https://img.icons8.com/isometric/50/light-on.png", // sun icon shown when dark is active
+        light: "https://img.icons8.com/isometric/50/light-off.png" // moon icon when light is active
+    };
+
+    // Load saved preference or system default
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+    const startDark = saved ? (saved === 'dark') : prefersDark;
+
+    const apply = (dark) => {
+        root.setAttribute('data-theme', dark ? 'dark' : 'light');
+        btn.setAttribute('aria-pressed', String(dark));
+        icon.src = dark ? ICONS.dark : ICONS.light;
+        icon.alt = dark ? 'Switch to light mode' : 'Switch to dark mode';
+    };
+
+    apply(startDark);
+
+    btn.onclick = () => {
+        const nowDark = root.getAttribute('data-theme') !== 'dark';
+        apply(nowDark);
+        localStorage.setItem('theme', nowDark ? 'dark' : 'light');
+    };
+
+    // Follow system changes if the user hasn't explicitly chosen yet
+    if (!saved && window.matchMedia) {
+        const mq = window.matchMedia('(prefers-color-scheme: dark)');
+        mq.addEventListener?.('change', (e) => apply(e.matches));
+    }
 }
