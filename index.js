@@ -99,6 +99,15 @@ class helpers {
                     .chip--skill { background: #f2fbf2; border-color: #40ef40; }
                     .chip--soft-skill { background: #f1e0bf; border-color: #efb840; }
                 </style>
+                <!-- Google tag (gtag.js) -->
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-3B92V0SNCE"></script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                
+                  gtag('config', 'G-3B92V0SNCE');
+                </script>
             </head>
             <body>
                 <header>
