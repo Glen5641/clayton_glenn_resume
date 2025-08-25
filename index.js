@@ -17,6 +17,7 @@ class helpers {
 
         if (item.style.trim() === '')
             return item.text
+
         if (item.style.includes('italic')) {
             item.style = item.style.replace('italic', '');
             return `<em>${helpers.formatText(item)}</em>`;
@@ -57,7 +58,8 @@ class helpers {
 
     static createPrintable() {
         const headerName = document.querySelector('.top-banner h1')?.textContent || (data.about?.name || 'My Resume');
-        const photo = document.getElementById('avatar').children[0].src || '';
+        let photo = document.getElementById('avatar').children[0].src || '';
+        photo = photo.replace('.png', "_resized.png");
 
         const itemsToRender = [
             'my-info', 'education-list', 'experience-list', 'projects-list', 'skills-list'
