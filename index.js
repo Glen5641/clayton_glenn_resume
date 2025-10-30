@@ -237,7 +237,7 @@ function renderEducation(education) {
         <div class="education-entry">
             <!-- SOURCED FROM LINKEDIN PUBLIC ICONS -->  
             <h3>
-                <img width="30" src="https://media.licdn.com/dms/image/v2/C560BAQHUAusLnQ4ZMw/company-logo_100_100/company-logo_100_100/0/1631377965583?e=1758758400&amp;v=beta&amp;t=OJd5K8jSNt4QmR_P142JJ70RYNbo4GvnXUuc9qPNE7g" height="24" alt="University of Oklahoma – Gallogly College of Engineering logo" />
+                <img width="30" height="18" src="https://1000logos.net/wp-content/uploads/2021/07/Oklahoma-Sooners-logo.png" alt="University of Oklahoma – Gallogly College of Engineering logo" />
                 ${ed.school}
             </h3>
             <p>${ed.degree} — ${ed.year}</p>
@@ -337,8 +337,8 @@ function setupThemeToggle() {
     if (!btn || !icon) return; // not rendered yet
 
     const ICONS = {
-        dark: "https://img.icons8.com/isometric/50/light-on.png", // sun icon shown when dark is active
-        light: "https://img.icons8.com/isometric/50/light-off.png" // moon icon when light is active
+        dark: "light-off.png", // sun icon shown when dark is active
+        light: "light-on.png" // moon icon when light is active
     };
 
     // Load saved preference or system default
